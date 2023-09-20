@@ -1,9 +1,15 @@
 import "./App.css";
 import PokemonCard from "./Components/PokemonCard";
 import NavBar from "./Components/NavBar";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 function App() {
+  useEffect(
+    () => {
+      alert("Welcome Pokemon trainer");
+    },
+    []
+  );
   const pokemonList = [
     {
       name: "Bulbasaur",
